@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+   function  Author(name,birthYear,nationality){
+   this.name= name
+   this.bithYear= birthYear
+    this.nationality=nationality
+    console.log(this.name)
+   
+   }
+    function Book(title,Author,genre,price){
+        this.title=title
+        this.Author=Author
+        this.genre=genre
+        this.price=price
+      
+    }
+
+   function getBookInfo(title){
+    //  console.log("Book Title:",title,"Author name:",
+    //  
+   }
+
+
+ let author1=  new Author("Raman",2000, "French")
+ let author2=  new Author("Raman",2003, "Indian")
+ let author3=  new Author("Raman",2004, "Bengali")
+ let author4=  new Author("Raman",2005, "Chinese")
+ let author5=  new Author("Raman",2006, "Korean")
+ let author6=  new Author("Raman",2007, "English")
+ let author7=  new Author("Raman",2008, "Dutch")
+ let author8=  new Author("Raman",2009, "Arabian")
+ let author9=  new Author("Raman",2010, "French")
+ let author10= new Author("Raman",2011, "French")
+ 
+
+let book1= new Book("Times",Author,"story",500)
+// let book2=  Book("thames",Author,"story",600)
+console.log(book1)
+</script>
+// The Author constructor should take name, birthYear, and nationality as arguments.
+// The Book constructor should take title, author (an Author object), genre, and price as arguments.
+// Implement methods in the Book prototype:
+// getBookInfo - to print the book's title, author's name, genre, and price.
+// Create an online bookstore by creating instances of Book and Author objects.
